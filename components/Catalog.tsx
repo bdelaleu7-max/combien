@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Toolbar } from "@/components/Toolbar";
 import { ProductCard } from "@/components/ProductCard";
 import { ListPanel, type ListEntry } from "@/components/ListPanel";
+import { About } from "@/components/About";
 import { useCatalog, type CategoryFilter } from "@/hooks/useCatalog";
 import { useHydrated } from "@/hooks/useHydrated";
 import { useList } from "@/lib/store";
@@ -45,6 +46,16 @@ export function Catalog() {
   return (
     <>
       <Header query={query} onQuery={setQuery} total={total} hydrated={hydrated} />
+
+      <section className="mx-auto max-w-[1200px] px-5 pt-8">
+        <h1 className="font-display text-2xl font-semibold leading-tight sm:text-3xl">
+          Le prix de tout, de la baguette à l&apos;île privée.
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink2">
+          Cherche n&apos;importe quel objet, découvre combien il coûte vraiment, ajoute-le à ta
+          liste et regarde le total grimper. Du plus banal au plus démesuré.
+        </p>
+      </section>
 
       <main className="mx-auto grid max-w-[1200px] grid-cols-1 items-start gap-7 px-5 pb-32 pt-6 lg:grid-cols-[1fr_320px]">
         <section>
@@ -87,11 +98,7 @@ export function Catalog() {
         </span>
       </div>
 
-      <p className="mx-auto max-w-[1200px] px-5 pb-10 text-xs leading-relaxed text-ink3">
-        Prototype · données d&apos;exemple. En production, le catalogue est alimenté par des flux
-        d&apos;affiliation (Amazon PA-API, AliExpress, Jumia, Awin) qui fournissent prix, image
-        officielle et lien d&apos;achat. Le bouton « voir le produit » devient ton lien affilié.
-      </p>
+      <About />
     </>
   );
 }

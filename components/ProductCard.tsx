@@ -62,7 +62,7 @@ export function ProductCard({ product, quantity, onAdd, onDecrement }: ProductCa
             className="btn btn-ghost"
             href={product.url}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener noreferrer"
             title={`Voir sur ${product.merchant}`}
             aria-label={`Voir sur ${product.merchant}`}
           >
