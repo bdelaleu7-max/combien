@@ -9,7 +9,7 @@ export function About() {
             combien, au juste ? D&apos;une baguette de pain à une île privée, on a réuni au même
             endroit le prix des choses les plus banales comme des plus démesurées. Ajoute ce qui
             te fait envie à ta liste, et regarde le total grimper. C&apos;est un moyen ludique de
-            prendre la mesure de la valeur des objets qui nous entourent — et de rêver un peu.
+            prendre la mesure de la valeur des objets qui nous entourent, et de rêver un peu.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export function About() {
             français à un instant donné. Pour les objets courants, ils correspondent au tarif
             public habituel ; pour les pièces d&apos;exception (yacht, œuvre d&apos;art, jet), ce
             sont des estimations représentatives. Un prix réel peut varier selon le modèle, le
-            vendeur et le moment — considère chaque montant comme une base de comparaison, pas
+            vendeur et le moment. Considère chaque montant comme une base de comparaison, pas
             comme un devis.
           </p>
         </div>
@@ -45,7 +45,7 @@ export function About() {
         </p>
         <p>
           <span className="font-semibold text-ink2">Mentions légales.</span> Éditeur du site :
-          Brandon — contact : bdelaleu7@gmail.com. Directeur de la publication :
+          Brandon. Contact : bdelaleu7@gmail.com. Directeur de la publication :
           Brandon. Hébergeur : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723,
           États-Unis. Les marques et noms de produits cités appartiennent à leurs propriétaires
           respectifs et ne sont mentionnés qu&apos;à titre indicatif, sans lien d&apos;affiliation

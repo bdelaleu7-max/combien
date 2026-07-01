@@ -79,15 +79,15 @@ export const PRODUCTS: Product[] = [
   { id: 51, name: "Baguette tradition", category: "Gastronomie", price: 1.2, merchant: "Boulangerie", url: "https://www.google.com/search?q=boulangerie" },
   { id: 52, name: "Croissant au beurre", category: "Gastronomie", price: 1.3, merchant: "Boulangerie", url: "https://www.google.com/search?q=boulangerie" },
   { id: 53, name: "Big Mac", category: "Gastronomie", price: 5, merchant: "McDonald's", url: "https://www.mcdonalds.fr" },
-  { id: 54, name: "Kebab", category: "Gastronomie", price: 7, merchant: "—", url: "https://www.google.com/search?q=kebab" },
+  { id: 54, name: "Kebab", category: "Gastronomie", price: 7, merchant: "Restaurant", url: "https://www.google.com/search?q=kebab" },
   { id: 55, name: "Plateau de fromages", category: "Gastronomie", price: 25, merchant: "La Fromagerie", url: "https://www.google.com/search?q=fromagerie" },
   { id: 56, name: "Plateau d'huîtres (douzaine)", category: "Gastronomie", price: 35, merchant: "Poissonnerie", url: "https://www.google.com/search?q=huitres" },
   { id: 57, name: "Menu étoilé Michelin", category: "Gastronomie", price: 250, merchant: "Guide Michelin", url: "https://guide.michelin.com/fr" },
   { id: 58, name: "Caviar Beluga (250 g)", category: "Gastronomie", price: 800, merchant: "Kaviari", url: "https://www.kaviari.fr" },
   { id: 59, name: "Bouteille de Pétrus", category: "Gastronomie", price: 4000, merchant: "Millésima", url: "https://www.millesima.fr" },
-  { id: 60, name: "Truffe blanche d'Alba (kg)", category: "Gastronomie", price: 5000, merchant: "Maison de la Truffe", url: "https://www.maison-de-la-truffe.com" },
-  { id: 61, name: "Pizza recouverte d'or", category: "Gastronomie", price: 1000, merchant: "—", url: "https://www.google.com/search?q=gold+pizza" },
-  { id: 62, name: "Dîner privé avec un chef étoilé", category: "Gastronomie", price: 3500, merchant: "—", url: "https://www.google.com/search?q=chef+a+domicile" },
+  { id: 60, name: "Truffe blanche d'Alba (kg)", category: "Gastronomie", price: 5000, merchant: "Maison de la Truffe", url: "https://www.maison-de-la-truffe.com", image: "/images/produits/truffe.jpg" },
+  { id: 61, name: "Pizza recouverte d'or", category: "Gastronomie", price: 1000, merchant: "Restaurant de luxe", url: "https://www.google.com/search?q=gold+pizza" },
+  { id: 62, name: "Dîner privé avec un chef étoilé", category: "Gastronomie", price: 3500, merchant: "Chef à domicile", url: "https://www.google.com/search?q=chef+a+domicile" },
 
   // --- Mode
   { id: 1, name: "Chaussettes coton (lot de 5)", category: "Mode", price: 9, merchant: "Uniqlo", url: "https://www.uniqlo.com/fr" },
@@ -108,7 +108,7 @@ export const PRODUCTS: Product[] = [
   { id: 14, name: "iPad Air", category: "Tech", price: 699, merchant: "Apple", url: "https://www.apple.com/fr" },
   { id: 15, name: "PlayStation 5 Pro", category: "Tech", price: 799, merchant: "Darty", url: "https://www.darty.com" },
   { id: 16, name: "Drone DJI", category: "Tech", price: 1000, merchant: "DJI", url: "https://www.dji.com" },
-  { id: 17, name: "iPhone 16 Pro Max", category: "Tech", price: 1479, merchant: "Apple", url: "https://www.apple.com/fr" },
+  { id: 17, name: "iPhone 16 Pro Max", category: "Tech", price: 1479, merchant: "Apple", url: "https://www.apple.com/fr", image: "/images/produits/iphone.jpg" },
   { id: 18, name: "TV OLED 65″", category: "Tech", price: 1800, merchant: "Boulanger", url: "https://www.boulanger.com" },
   { id: 19, name: "MacBook Pro 16″", category: "Tech", price: 2999, merchant: "Apple", url: "https://www.apple.com/fr" },
 
@@ -126,10 +126,10 @@ export const PRODUCTS: Product[] = [
   { id: 28, name: "Renault Clio neuve", category: "Auto", price: 20000, merchant: "Renault", url: "https://www.renault.fr" },
   { id: 29, name: "Tesla Model 3", category: "Auto", price: 42000, merchant: "Tesla", url: "https://www.tesla.com/fr_fr" },
   { id: 30, name: "Porsche 911 Carrera", category: "Auto", price: 132000, merchant: "Porsche", url: "https://www.porsche.com/france" },
-  { id: 31, name: "Bugatti Chiron", category: "Auto", price: 3200000, merchant: "Bugatti", url: "https://www.bugatti.com" },
+  { id: 31, name: "Bugatti Chiron", category: "Auto", price: 3200000, merchant: "Bugatti", url: "https://www.bugatti.com", image: "/images/produits/bugatti.jpg" },
 
   // --- Voyage
-  { id: 32, name: "Vol A/R Paris–New York", category: "Voyage", price: 550, merchant: "Air France", url: "https://www.airfrance.fr" },
+  { id: 32, name: "Vol A/R Paris-New York", category: "Voyage", price: 550, merchant: "Air France", url: "https://www.airfrance.fr" },
   { id: 33, name: "Nuit en hôtel 5 étoiles", category: "Voyage", price: 400, merchant: "Booking", url: "https://www.booking.com" },
   { id: 34, name: "Croisière (7 nuits)", category: "Voyage", price: 2500, merchant: "MSC", url: "https://www.msccroisieres.fr" },
   { id: 35, name: "Tour du monde 1ʳᵉ classe", category: "Voyage", price: 30000, merchant: "Air France", url: "https://www.airfrance.fr" },
@@ -138,7 +138,7 @@ export const PRODUCTS: Product[] = [
   // --- Luxe
   { id: 37, name: "Champagne Dom Pérignon", category: "Luxe", price: 200, merchant: "Dom Pérignon", url: "https://www.domperignon.com" },
   { id: 38, name: "Bouteille Château Margaux", category: "Luxe", price: 700, merchant: "Millésima", url: "https://www.millesima.fr" },
-  { id: 39, name: "Rolex Submariner", category: "Luxe", price: 11000, merchant: "Rolex", url: "https://www.rolex.com" },
+  { id: 39, name: "Rolex Submariner", category: "Luxe", price: 11000, merchant: "Rolex", url: "https://www.rolex.com", image: "/images/produits/rolex.jpg" },
   { id: 40, name: "Sac Hermès Birkin", category: "Luxe", price: 11000, merchant: "Hermès", url: "https://www.hermes.com/fr" },
   { id: 41, name: "Collier Cartier", category: "Luxe", price: 25000, merchant: "Cartier", url: "https://www.cartier.fr" },
 
@@ -150,8 +150,8 @@ export const PRODUCTS: Product[] = [
   { id: 46, name: "Château en Bourgogne", category: "Immobilier", price: 4500000, merchant: "Le Figaro Propriétés", url: "https://proprietes.lefigaro.fr" },
 
   // --- Extrême
-  { id: 47, name: "Yacht de 30 mètres", category: "Extrême", price: 18000000, merchant: "Ferretti", url: "https://www.ferretti-yachts.com" },
+  { id: 47, name: "Yacht de 30 mètres", category: "Extrême", price: 18000000, merchant: "Ferretti", url: "https://www.ferretti-yachts.com", image: "/images/produits/yacht.jpg" },
   { id: 48, name: "Île privée", category: "Extrême", price: 70000000, merchant: "Private Islands", url: "https://www.privateislandsonline.com" },
   { id: 49, name: "Œuvre majeure (enchères)", category: "Extrême", price: 100000000, merchant: "Christie's", url: "https://www.christies.com" },
-  { id: 50, name: "Club de Ligue 1 (majoritaire)", category: "Extrême", price: 250000000, merchant: "—", url: "https://www.transfermarkt.fr" },
+  { id: 50, name: "Club de Ligue 1 (majoritaire)", category: "Extrême", price: 250000000, merchant: "Transfermarkt", url: "https://www.transfermarkt.fr" },
 ];
