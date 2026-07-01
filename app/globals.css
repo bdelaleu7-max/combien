@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --ink: #16181d;
+  --ink-2: #595f6b;
+  --ink-3: #9097a2;
+  --line: #eceae6;
+  --line-2: #e2e0db;
+  --accent: #1e5b4f;
+  --accent-soft: #e9f1ee;
+  --accent-ink: #16463c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+@layer components {
+  .chip {
+    @apply rounded-full border border-line2 bg-surface px-3.5 py-1.5 text-[13px] font-semibold text-ink2 transition-colors;
+  }
+  .chip:hover {
+    @apply border-ink3;
+  }
+  .chip-on {
+    @apply border-ink bg-ink text-white;
+  }
+
+  .field {
+    @apply h-11 w-full rounded border border-line2 bg-surface pl-10 pr-9 text-[15px] text-ink shadow-e-1 outline-none transition;
+  }
+  .field:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .card {
+    @apply flex flex-col overflow-hidden rounded-lg border border-line bg-surface transition-all duration-150;
+  }
+  .card:hover {
+    @apply -translate-y-0.5 border-line2 shadow-e-2;
+  }
+
+  .thumb {
+    @apply relative flex aspect-[4/3] items-center justify-center;
+    background: radial-gradient(120% 120% at 30% 20%, #fafaf8 0%, #f1f0ec 100%);
+    color: #c3c0b8;
+  }
+
+  .btn {
+    @apply flex h-[38px] items-center justify-center gap-1.5 rounded text-[13px] font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply flex-1 bg-ink text-white;
+  }
+  .btn-primary:hover {
+    background: #000;
+  }
+  .btn-ghost {
+    @apply w-[42px] border border-line2 bg-surface text-ink;
+  }
+  .btn-ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .stepper {
+    @apply flex h-[38px] flex-1 items-center justify-between rounded border border-ink;
+  }
+  .stepper button {
+    @apply grid h-full w-[38px] place-items-center transition-colors;
+  }
+  .stepper button:hover {
+    @apply bg-line;
+  }
+}
