@@ -45,8 +45,8 @@ export function About() {
         </p>
         <p>
           <span className="font-semibold text-ink2">Mentions légales.</span> Éditeur du site :
-          [Brandon] — contact : [bdelaleu7@gmail.com]. Directeur de la publication :
-          [Brandon]. Hébergeur : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723,
+          Brandon — contact : bdelaleu7@gmail.com. Directeur de la publication :
+          Brandon. Hébergeur : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723,
           États-Unis. Les marques et noms de produits cités appartiennent à leurs propriétaires
           respectifs et ne sont mentionnés qu&apos;à titre indicatif, sans lien d&apos;affiliation
           officiel autre que ceux explicitement déclarés.
