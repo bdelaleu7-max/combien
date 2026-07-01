@@ -36,7 +36,7 @@ export function Header({ query, onQuery, total, hydrated }: HeaderProps) {
             className="field font-sans"
             value={query}
             onChange={(event) => onQuery(event.target.value)}
-            placeholder="Cherche n'importe quoi — des chaussettes à une île privée…"
+            placeholder="Cherche n'importe quoi, des chaussettes à une île privée…"
             aria-label="Rechercher un produit"
           />
           {query && (
@@ -52,7 +52,7 @@ export function Header({ query, onQuery, total, hydrated }: HeaderProps) {
 
         <div className="hidden items-center gap-2 rounded border border-line2 bg-surface px-3.5 py-2.5 text-sm font-semibold shadow-e-1 sm:flex">
           <span className="text-ink2">Total</span>
-          <span className="num text-accent">{hydrated ? formatShort(total) : "—"}</span>
+          <span className="num text-accent">{hydrated ? formatShort(total) : "…"}</span>
         </div>
       </div>
     </header>

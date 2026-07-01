@@ -13,7 +13,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Combien. — Le prix de tout, des chaussettes à une île privée",
+  title: "Combien. Le prix de tout, des chaussettes à une île privée",
   description:
     "Cherche n'importe quel objet, vois son prix réel, ajoute-le à ta liste et découvre combien ça coûte vraiment.",
   openGraph: {
