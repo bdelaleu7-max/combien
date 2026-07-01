@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowUpRight, Minus, Plus } from "lucide-react";
-import { CATEGORY_ICON, CATEGORY_IMAGE, type Product } from "@/lib/products";
+import { CATEGORY_ICON, type Product } from "@/lib/products";
 import { formatEUR } from "@/lib/format";
 
 interface ProductCardProps {
@@ -15,18 +15,17 @@ interface ProductCardProps {
 export function ProductCard({ product, quantity, onAdd, onDecrement }: ProductCardProps) {
   const [imageFailed, setImageFailed] = useState(false);
   const Icon = CATEGORY_ICON[product.category];
-  const imageSrc = product.image ?? CATEGORY_IMAGE[product.category];
-  const showImage = Boolean(imageSrc) && !imageFailed;
+  const showImage = Boolean(product.image) && !imageFailed;
 
   return (
     <article className="card">
-      <div className="thumb">
+      <div className="thumb overflow-hidden">
         {showImage ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={imageSrc}
+            src={product.image}
             alt={product.name}
-            className="h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
             onError={() => setImageFailed(true)}
           />
         ) : (
@@ -42,7 +41,7 @@ export function ProductCard({ product, quantity, onAdd, onDecrement }: ProductCa
         <p className="text-xs text-ink3">{product.merchant}</p>
         <p className="num mt-1.5 font-display text-[21px] font-semibold">{formatEUR(product.price)}</p>
 
-        <div className="mt-2.5 flex gap-2">
+        <div className="mt-auto flex gap-2 pt-3">
           {quantity === 0 ? (
             <button className="btn btn-primary" onClick={onAdd}>
               <Plus size={16} /> Ajouter
